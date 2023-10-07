@@ -1,0 +1,52 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.frameLayout {
+  max-width: $frame-layout-width;
+  margin: 0 auto;
+
+  @include breakpoint(md) {
+    max-width: 100%;
+  }
+}
+
+.frameLayoutInner {
+  background: $color-white;
+  border-radius: $frame-layout-radius;
+  margin: $frame-layout-top-spacing auto;
+  padding: $frame-layout-paddings;
+  box-shadow: $shadow-lg;
+
+  @include breakpoint(md) {
+    margin: 0;
+    border-radius: 0;
+    padding: 1.8rem 1rem;
+    box-shadow: none;
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signUp {
+  margin: 1rem 0;
+}
+
+.signIn {
+  margin: 1rem 0 4rem 0;
+  a {
+    color: $color-primary-700;
+    font-weight: 600;
+    text-decoration: none;
+  }
+}

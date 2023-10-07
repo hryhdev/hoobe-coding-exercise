@@ -1,0 +1,21 @@
+@import "../../../../styles/variables";
+
+.button {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  outline: none;
+  border: none;
+  border-radius: $border-radius-xs;
+  padding: 0.8rem;
+  cursor: pointer;
+  font-size: $font-size-xs;
+  font-weight: 600;
+  color: $color-white;
+  background: $color-primary;
+  transition: all .12s ease-in-out;
+  
+  &:hover {
+    background: $color-primary-800;
+  }
+}

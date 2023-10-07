@@ -1,0 +1,13 @@
+@import "_variables";
+$breakpoints: (
+  sx: $sx,
+  sm: $sm,
+  md: $md,
+  lg: $lg,
+);
+
+@mixin breakpoint($breakpoint) {
+  @media (max-width: map-get($breakpoints, $breakpoint)) {
+    @content;
+  }
+}

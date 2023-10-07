@@ -1,0 +1,13 @@
+@import "_variables";
+
+.contentPageTitle {
+  padding: 0.5rem 0;
+  text-align: center;
+  font-size: $font-size-sm;
+}
+
+.contentPageItems {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}

@@ -1,0 +1,14 @@
+@import "_variables";
+
+.notFoundPage {
+  text-align: center;
+  
+  span {
+    font-size: $font-size-md;
+  }
+
+  a {
+    display: inline-block;
+    margin: 1.5rem 0;
+  }
+}

@@ -1,0 +1,50 @@
+@import "../../../styles/variables";
+
+.contentItem {
+  position: relative;
+  border-radius: $border-radius-xs;
+  transition: transform 0.3s, box-shadow 0.3s;
+
+  a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  &:hover {
+    box-shadow: 0.5rem 1rem 1.2rem 0px rgb(0 0 0 / 5%);
+  }
+}
+
+.contentItemIframe {
+  iframe {
+    max-width: 100%;
+    border-radius: $border-radius-xs;
+  }
+}
+
+.contentItemWithImage {
+  width: 100%;
+  min-height: 22.5rem;
+  border-radius: $border-radius-xs;
+  background-position: 50%;
+  background-size: cover;
+}
+
+.contentItemAssetsInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 5rem;
+  padding: 2rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: $color-white;
+  font-weight: 600;
+  background: linear-gradient(180deg, transparent 0%, $color-black 130%);
+  border-bottom-left-radius: $border-radius-xs;
+  border-bottom-right-radius: $border-radius-xs;
+}
